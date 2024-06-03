@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sevillana&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +6,9 @@
 }
 
 nav{
-    background-color: beige;
+    background-color: #204e56;
     height: 63px;
-    color: #000;    
+    color: #cecbff;    
     font-family: "Sevillana", cursive;
     display: flex;
     padding: 0 12px;
@@ -37,17 +36,26 @@ nav li{
     font-size: 8vw;
     cursor: pointer;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .box:hover{
-    background-color: aquamarine;
+    background-color: #fccece;
 }
 
+.info{
+    font-size: 20px;
+}
 
 .gameInfo{
     padding: 34px;
     font-family: "Balsamiq Sans", sans-serif;
 }
+
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+
 
 .imgbox img{
     width: 0;
@@ -66,4 +74,39 @@ nav li{
 }
 .bb-0{
     border-bottom: 0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 6px 24px;
+    background: #c7ff96;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: chocolate;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
 }
