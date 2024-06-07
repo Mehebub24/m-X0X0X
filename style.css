@@ -5,7 +5,7 @@
    
 }
 
-nav{
+.navList{
     background-color: #204e56;
     height: 63px;
     color: #cecbff;    
@@ -14,9 +14,22 @@ nav{
     padding: 0 12px;
     align-items: center;
     font-size: 27px;
+    list-style: none; 
 }
-nav li{
-    list-style-type: none;
+
+.navList li{
+    display: inline;
+}
+
+
+.navList .profileImg{
+    margin-left: auto;
+}
+
+.navList .profileImg img{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
 }
 
 .gameContainer{
@@ -87,7 +100,6 @@ nav li{
     font-weight: bolder;
 }
 .line{
-    background-color: black;
     height: 3px;
     width: 0;
     position: absolute;
@@ -96,8 +108,20 @@ nav li{
 }
 
 @media screen and (max-width: 950px) {
+    .navList{
+        font-size: 20px;
+        align-items: center;
+    }
+    .navList .profileImg{
+        margin-left: auto ;
+    }
     .gameContainer{
         flex-wrap: wrap;
+    }
+    .line{
+    position: absolute;
+    background-color: chocolate;
+    transition: width 1s ease-in-out;
     }
     .gameInfo{
         margin-top: 34px;

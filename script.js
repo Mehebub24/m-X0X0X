@@ -62,4 +62,5 @@ reset.addEventListener('click',()=>{
     isGameOver = false;
     document.getElementsByClassName("info")[0].innerHTML= "Trun for " + turn
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width ="0px"
+    document.querySelector(".line").style.width = "0vw";
 })
